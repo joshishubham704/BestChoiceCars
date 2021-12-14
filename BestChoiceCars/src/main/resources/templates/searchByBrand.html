@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>Search By Brand</title>
+<style>
+div
+{
+	background-color:#a2c3c3;
+	margin:100px auto 0px auto;
+	width:40%;
+	height: 100%;
+	font-family: calibri;
+	border-radius: 20px;
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	
+}
+h1
+{
+	font-size: 36px;
+}
+table, td, th
+{
+	
+	border-collapse: collapse;
+}
+input
+{
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  width:30%;
+  height: 47px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  width:20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+input:hover, input:active
+{
+	background-color: red;
+}
+select
+{
+	border-radius: 10px;
+	width: 100%;
+	height: 30px;
+	font-family: calibri;
+	font-size: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+</style>
+</head>
+<body>
+<div align="center"><br>
+<h1>BestChoice Cars <i class='fas fa-car-side' style='font-size:48px'></i></h1>
+<h4>Choose brand to find available models</h4>
+<form name="form1" action="searchByBrand" method="POST">
+<table>
+<tr>
+<td><b>Brand:&nbsp;&nbsp;</b></td>
+<td>
+<select name="bname" id="bname" required>
+	<option></option>
+	<option th:each=="car: ${cars}"  th:text="${car}" th:value="${car}"></option>
+</select>
+</td>
+</tr>
+</table><br><br>
+<a class="btn btn-danger" href="javascript:javascript:history.go(-1)">&laquo; &nbsp;&nbsp;Back</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Find Models&nbsp;&nbsp;&raquo;"><br><br>
+<span></span>
+</form>
+</div>
+</body>
+</html>

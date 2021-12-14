@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search By Price</title>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+div
+{
+	background-color:#a2c3c3;
+	margin:100px auto auto auto;
+	width:28%;
+	height: 100%;
+	font-family: calibri;
+	border-radius: 20px;
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+button
+{
+	background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  height: 47px;
+}
+button:hover, button:active
+{
+	background-color: red;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+input
+{
+	background-color:black;
+	color:black;
+}
+</style>
+</head>
+<body>
+<div align="center"><br>
+<h1>BestChoice Cars <i class='fas fa-car-side' style='font-size:48px'></i></h1>
+<h4>Choose brand to find available models</h4>
+<form name="form1" action="searchByPrice" method="POST">
+<input type="radio" id="ltf" name="price" value="ltf" style="background-color: black;"required><label for="ltf" ><b>< 5 lakhs</b></label><br>
+<input type="radio" id="gtf" name="price" value="gtf" required><label for="gtf"><b>> 5 lakhs</b></label><br><br><br>
+<a class="btn btn-danger" href="javascript:javascript:history.go(-1)">&laquo; &nbsp;&nbsp;Back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="submit">Find Your Car &nbsp;&nbsp;<i class="fa fa-search"></i></button><br>
+<br><br>
+</form>
+</div>
+</body>
+</html>

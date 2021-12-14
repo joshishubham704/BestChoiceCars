@@ -9,5 +9,4 @@ class BestChoiceCarsApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

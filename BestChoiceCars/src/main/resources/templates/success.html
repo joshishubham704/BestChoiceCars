@@ -4,36 +4,47 @@
 <meta charset="ISO-8859-1">
 <title>Congratulations</title>
 <link rel="stylesheet/scss" href="style.scss" type="text/css">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'
+	crossorigin='anonymous'></script>
 <script src="confetti.js"></script>
 <style>
-div
-{
-	background-color:#a2c3c3;
-	margin:100px auto auto auto;
-	width:45%;
+div {
+	background-color: #a2c3c3;
+	margin: 100px auto auto auto;
+	width: 45%;
 	height: 100%;
 	font-family: calibri;
 	border-radius: 20px;
 	color: black;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.3);
 	font-size: 20px;
 }
-span
-{
-	color:red;
+
+span {
+	color: red;
 }
 </style>
 </head>
 <body>
-<div align="center"><br>
-<h1>BestChoice Cars <i class='fas fa-car-side' style='font-size:48px'></i></h1><br>
-<h4>Congratulations!!! You have successfully booked <span th:text="${buy}"></span> car.</h4><br>
-<h5>Thank you!!!Have a good day!!!</h5><br><br>
-</div>
+	<div align="center">
+		<br>
+		<h1>
+			BestChoice Cars <i class='fas fa-car-side' style='font-size: 48px'></i>
+		</h1>
+		<br>
+		<h4>
+			Congratulations!!! You have successfully booked <span
+				th:text="${buy}"></span> car.
+		</h4>
+		<br>
+		<h5>Thank you!!!Have a good day!!!</h5>
+		<br>
+		<br>
+	</div>
 
-<script src="confetti.js"></script>
-    <script>
+	<script src="confetti.js"></script>
+	<script>
 
         const start = () => {
             setTimeout(function() {

@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
-
 public interface CarRepository extends CrudRepository < Car, Long > {
 
 	List<Car> findCarsByBrand(@Param(value="brand") String brand);
